@@ -38,7 +38,10 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server is running on port ${PORT}`);
+//I added this code
+const PORT = process.env.PORT || 3000; //Creating the default 3000 port 
+
+app.listen(PORT, '0.0.0.0', () => { //Starts the server
+
+    console.log(`Server is running on port ${PORT}`); //Prints message so i know the server is running 
 });
